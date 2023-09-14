@@ -23,7 +23,25 @@ const Welcome = () => {
       </View>
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
-          <TextInput srtyle={styles.searchInput} />
+          <TextInput
+            style={styles.searchInput}
+            value=""
+            onChange={() => { }}
+            placeholder="Search"
+          />
+        </View>
+        <TouchableOpacity
+          style={styles.searchBtn}
+          onPress={() => { }}
+        >
+          <Image
+            source={icons.search}
+            resizeMode='contain'
+            style={styles.searchBtnImage}
+          />
+        </TouchableOpacity>
+        <View style={styles.tabsContainer}>
+          <FlatList />
         </View>
       </View>
     </View>
